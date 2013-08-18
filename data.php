@@ -12,307 +12,193 @@
 // lection laba total practick voenka
 
 $monday = '
-			<div class="practick p5 n1 n3">
+			<div class="lection p5">
 				<p class="time">15:20-16:55</p>
-				<p class="name">ЭПр</p>
-				<p class="description">пз	504-2	Слюсарь Т.Л.</p>
-			</div>
-
-			<div class="practick p5 n2 n4">
-				<p class="time">15:20-16:55</p>
-				<p class="name">ФАФиОСвЦРС</p>
-				<p class="description">пз	333-1	Чердынцев В.А.</p>
-			</div>
-
-			<div class="lection p6">
-				<p class="time">17:05-18:40</p>
-				<p class="name">ЭПр</p>
-				<p class="description">лк	207-3	Носенко А.А.</p>
-			</div>
-
-			<div class="lection p7">
-				<p class="time">18:45-20:20</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лк	347-1	Горбачев К.Л.</p>
 			</div>
 
-			<div class="practick p8 n1 n3">
-				<p class="time">20:25-22:00</p>
-				<p class="name">МЦРиЭМС РЭС</p>
-				<p class="description">пз	347-1	Горбачев К.Л.</p>
+			<div class="lection p6">
+				<p class="time">17:05-18:40</p>
+				<p class="name">СПИсРСС</p>
+				<p class="description">лк	337-1	Чердынцев В.А.</p>
+			</div>
+
+			<div class="laba total p7 n2">
+				<p class="time">18:45-20:20</p>
+				<p class="name">ОТ</p>
+				<p class="description">лр	601-2	Амелин М.А.</p>
 			</div>
 ';
 
 $tuesday = '
-			<div class="laba p4 n1 gr1">
+			<div class="practick p4 n2 n4">
 				<p class="time">13:25-15:00</p>
-				<p class="name">ЭПр</p>
-				<p class="description">лр	309-5	Карпицкая С.С.</p>
+				<p class="name">ОПиУП</p>
+				<p class="description">пз	222-5	Фещенко С.Л.</p>
 			</div>
 
-			<div class="laba p4 n3 gr2">
-				<p class="time">13:25-15:00</p>
-				<p class="name">ЭПр</p>
-				<p class="description">лр	309-5	Карпицкая С.С.</p>
-			</div>
-
-			<div class="laba total p4 n4">
-				<p class="time">13:25-15:00</p>
-				<p class="name">ФАФиОСвЦРС</p>
-				<p class="description">лр	333-1	Чердынцев В.А.</p>
-			</div>
-
-			<div class="laba total p4 n2">
-				<p class="time">13:25-15:00</p>
-				<p class="name">ЭПр</p>
-				<p class="description">лр	209-5	Карпицкая С.С.</p>
-			</div>
-
-			<div class="practick p5">
+			<div class="lection p5">
 				<p class="time">15:20-16:55</p>
-				<p class="name">ФК-ЗОЖ СПИДиН</p>
-				<p class="description"></p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">лк	402-1	Козел В.М.</p>
 			</div>
 
-			<div class="lection p6">
+			<div class="laba p6 n1 n3 gr1">
 				<p class="time">17:05-18:40</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">лк	202-3	Прудник А.М.</p>
+				<p class="name">МЦРиЭМС РЭС</p>
+				<p class="description">лр	347-1	Горбачев К.Л.</p>
 			</div>
 
-			<div class="laba p7 n1 gr1">
+			<div class="laba p6 n2 n4 gr1">
+				<p class="time">17:05-18:40</p>
+				<p class="name">ЦТиР</p>
+				<p class="description">лр	518-3	Хоминич А.Л.</p>
+			</div>
+
+			<div class="laba p6 n1 n3 gr2">
+				<p class="time">17:05-18:40</p>
+				<p class="name">ЦТиР</p>
+				<p class="description">лр	518-3	Хоминич А.Л.</p>
+			</div>
+
+			<div class="laba p6 n2 n4 gr2">
+				<p class="time">17:05-18:40</p>
+				<p class="name">МЦРиЭМС РЭС</p>
+				<p class="description">лр	347-1	Горбачев К.Л.</p>
+			</div>
+
+			<div class="laba total p7 n1 n3">
 				<p class="time">18:45-20:20</p>
-				<p class="name">ФАФиОСвЦРС</p>
-				<p class="description">лр	333-1	Чердынцев В.А.</p>
-			</div>
-
-			<div class="laba p7 n1 gr2">
-				<p class="time">18:45-20:20</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лр	337а-1	Ганкевич С.А.</p>
-			</div>
-
-			<div class="laba p7 n3 gr1">
-				<p class="time">18:45-20:20</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лр	337а-1	Ганкевич С.А.</p>
-			</div>
-
-			<div class="laba p7 n3 gr2">
-				<p class="time">18:45-20:20</p>
-				<p class="name">ФАФиОСвЦРС</p>
-				<p class="description">лр	333-1	Чердынцев В.А.</p>
-			</div>
-
-			<div class="practick p7 n2 n4">
-				<p class="time">18:45-20:20</p>
-				<p class="name">СПвУЦРС</p>
-				<p class="description">пз	339-1	Казека А.А.</p>
-			</div>
-
-			<div class="practick p8 n4">
-				<p class="time">20:25-22:00</p>
-				<p class="name">ОИБГ</p>
-				<p class="description">пз	509-2	Мякинькая А.В.</p>
-			</div>
-
-			<div class="laba p8 n3 gr1">
-				<p class="time">20:25-22:00</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лр	337а-1	Ганкевич С.А.</p>
-			</div>
-
-			<div class="laba p8 n1 gr2">
-				<p class="time">20:25-22:00</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лр	337а-1	Ганкевич С.А.</p>
+				<p class="name">МЦРиЭМС РЭС</p>
+				<p class="description">лр	347-1	Горбачев К.Л.</p>
 			</div>
 ';
 
 $wednesday = '
+			<div class="practick p4 n2 n4">
+				<p class="time">13:25-15:00</p>
+				<p class="name">СПИсРСС</p>
+				<p class="description">пз	337-1	Чердынцев В.А.</p>
+			</div>
+
 			<div class="lection p5">
 				<p class="time">15:20-16:55</p>
-				<p class="name">УПСвЦРС</p>
-				<p class="description">лк	347-1	Горбачев К.Л.</p>
-			</div>
-
-			<div class="lection p6">
-				<p class="time">17:05-18:40</p>
-				<p class="name">ФАФиОСвЦРС</p>
-				<p class="description">лк	337-1	Чердынцев В.А.</p>
-			</div>
-
-			<div class="practick p7 n1 n3">
-				<p class="time">18:45-20:20</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">пз	603-2	Камлач П.В.</p>
-			</div>
-
-			<div class="laba total p7 n2">
-				<p class="time">18:45-20:20</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">лр	603-2	Камлач П.В.</p>
-			</div>
-
-			<div class="practick p7 n4">
-				<p class="time">18:45-20:20</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">пз	603-2	Камлач П.В.</p>
-			</div>
-
-			<div class="laba p8 n1 gr1">
-				<p class="time">20:25-22:00</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">лр	605-2	Камлач П.В.</p>
-			</div>
-
-			<div class="laba p8 n3 gr1">
-				<p class="time">20:25-22:00</p>
-				<p class="name">УПСвЦРС</p>
-				<p class="description">лр	347-1	Горбачев К.Л.</p>
-			</div>
-
-			<div class="laba p8 n1 gr2">
-				<p class="time">20:25-22:00</p>
-				<p class="name">УПСвЦРС</p>
-				<p class="description">лр	347-1	Горбачев К.Л.</p>
-			</div>
-
-			<div class="laba p8 n3 gr2">
-				<p class="time">20:25-22:00</p>
-				<p class="name">ЗНиОотЧС.РБ</p>
-				<p class="description">лр	605-2	Камлач П.В.</p>
-			</div>
-';
-
-$thursday = '
-			<div class="voenka p1">
-				<p class="time">8:00-9:35</p>
-				<p class="name">Спецподготовка</p>
-				<p class="description"></p>
-			</div>
-
-			<div class="voenka p2">
-				<p class="time">9:45-11:20</p>
-				<p class="name">Спецподготовка</p>
-				<p class="description"></p>
-			</div>
-
-			<div class="voenka p3">
-				<p class="time">11:40-13:15</p>
-				<p class="name">Спецподготовка</p>
-				<p class="description"></p>
-			</div>
-
-			<div class="voenka p4">
-				<p class="time">13:25-15:00</p>
-				<p class="name">Спецподготовка</p>
-				<p class="description"></p>
-			</div>
-';
-
-$friday = '
-			<div class="practick p5">
-				<p class="time">15:20-16:55</p>
-				<p class="name">ФК-ЗОЖ СПИДиН</p>
-				<p class="description"></p>
+				<p class="name">ОТ</p>
+				<p class="description">лк	211-3	Осипович В.С.</p>
 			</div>
 
 			<div class="lection p6 n1 n3">
 				<p class="time">17:05-18:40</p>
-				<p class="name">ОИБГ</p>
-				<p class="description">лк	209-3	Смирнов А.В.</p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">лк	402-1	Козел В.М.</p>
 			</div>
 
-			<div class="lection p6 n2 n4">
+			<div class="laba p6 n2 n4 gr2">
 				<p class="time">17:05-18:40</p>
-				<p class="name">МЦРиЭМС РЭС</p>
-				<p class="description">лк	347-1	Горбачев К.Л.</p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">лр	347-1	Казубович Т.М.</p>
 			</div>
 
-			<div class="laba total p7 n2">
+			<div class="laba p7 n1 n3 gr1">
 				<p class="time">18:45-20:20</p>
-				<p class="name">УПСвЦРС</p>
-				<p class="description">лр	347-1	Горбачев К.Л.</p>
-			</div>
-
-			<div class="practick p7 n1 n3">
-				<p class="time">18:45-20:20</p>
-				<p class="name">УПСвЦРС</p>
-				<p class="description">пз	347-1	Горбачев К.Л.</p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">лр	347-1	Казубович Т.М.</p>
 			</div>
 ';
 
-$saturday = '
-			<div class="lection p1">
-				<p class="time">8:00-9:35</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лк	337-1	Ганкевич С.А.</p>
+$thursday = '
+			<div class="laba total p4 n1 n3">
+				<p class="time">13:25-15:00</p>
+				<p class="name">ЦТиР</p>
+				<p class="description">лр	518-3	Хоминич А.Л.</p>
 			</div>
 
-			<div class="laba total p2 n1 n3">
-				<p class="time">9:45-11:20</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лр	337а-1	Ганкевич С.А.</p>
+			<div class="lection p4 n2 n4">
+				<p class="time">13:25-15:00</p>
+				<p class="name">ЦТиР</p>
+				<p class="description">лк	509-3	Хоминич А.Л.</p>
 			</div>
 
-			<div class="lection p2 n2 n4">
-				<p class="time">9:45-11:20</p>
-				<p class="name">АУвСЦР</p>
-				<p class="description">лк	418-1	Ганкевич С.А.</p>
+			<div class="lection p5">
+				<p class="time">15:20-16:55</p>
+				<p class="name">ЦТиР</p>
+				<p class="description">лк	509-3	Хоминич А.Л.</p>
+			</div>
+
+			<div class="laba p6 n1 gr1">
+				<p class="time">17:05-18:40</p>
+				<p class="name">ОТ</p>
+				<p class="description">лр	601-2	Амелин М.А.</p>
+			</div>
+
+			<div class="laba p6 n3 gr2">
+				<p class="time">17:05-18:40</p>
+				<p class="name">ОТ</p>
+				<p class="description">лр	601-2	Амелин М.А.</p>
+			</div>
+';
+
+$friday = '
+			<div class="lection p6">
+				<p class="time">17:05-18:40</p>
+				<p class="name">ОПиУП</p>
+				<p class="description">лк	114-3	Ермакова Е.В.</p>
+			</div>
+
+			<div class="laba total p7 n1 n3">
+				<p class="time">18:45-20:20</p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">лр	347-1	Казубович Т.М.</p>
+			</div>
+
+			<div class="practick p7 n2 n4">
+				<p class="time">18:45-20:20</p>
+				<p class="name">СиС ЦРС</p>
+				<p class="description">пз	347-1	Казубович Т.М.</p>
 			</div>
 ';
 
 $info = '
-<ul>
-	<li><a href="http://bsuir-helper.ru/predmet/ekonomika-predpriyatiya-organizatsii">ЭПр</a>, <a href="http://bsuir-helper.ru/predmet/ekonomika-predpriyatiya-radioelektronnoi-promyshlennosti">ЭПр РП</a>
-		<ol>
-			<li><a href="http://bsuir-helper.ru/lectors/nosenko">Носенко Алла Алексеевна</a></li>
-			<li><a href="#">Карпицкая Светлана Сергеевна</a></li>
-			<li><a href="http://bsuir-helper.ru/lectors/slyusar">Слюсарь Тамара Леонидовна</a></li>
-		</ol>
-	</li>
-
-	<li><a href="#">МЦРиЭМС РЭС</a>, <a href="#">УПСвЦРС</a>
+<ul class="list-unstyled">
+	<li>
+		<a href="#">МЦРиЭМС РЭС ()[ЛК, ЛР]</a>
 		<ol>
 			<li><a href="http://bsuir-helper.ru/lectors/gorbachev">Горбачев Константин Леонидович</a></li>
 		</ol>
 	</li>
-
-	<li><a href="http://bsuir-helper.ru/predmet/oibg">ОИБГ</a>
-		<ol>
-			<li><a href="http://bsuir-helper.ru/lectors/myakinkaya-anna-vladimirovna">Мякинькая Анна Владимировна</a></li>
-			<li><a href="http://bsuir-helper.ru/lectors/smirnov-1">Смирнов Артем Владимирович</a></li>
-		</ol>
-	</li>
-
-	<li><a href="http://bsuir-helper.ru/predmet/zashchita-naseleniya">ЗНиОотЧС.РБ</a>
-		<ol>
-			<li><a href="http://bsuir-helper.ru/lectors/prudnik">Прудник Александр Михайлович</a></li>
-			<li><a href="#">Клюев Андрей Петрович</a></li>
-			<li><a href="#">Зацепин Евгений Николаевич</a></li>
-		</ol>
-	</li>
-
-	<li><a href="#">ФАФиОСвЦРС</a>
+	<li>
+		<a href="#">СПИсРСС ()[ЛК, ПЗ]</a>
 		<ol>
 			<li><a href="http://bsuir-helper.ru/lectors/cherdyntsev">Чердынцев Валерий Аркадьевич</a></li>
-			<li><a href="#">Мартинович Алексей Васильевич</a></li>
 		</ol>
 	</li>
-
-	<li><a href="#">АУвСЦР</a>
+	<li>
+		<a href="#">СиС ЦРС (Системы и Сети ЦРС)[ЛК, ЛР, ПЗ]</a>
 		<ol>
-			<li><a href="http://bsuir-helper.ru/lectors/gankevich">Ганкевич Сергей Антонович</a></li>
+			<li><a href="http://bsuir-helper.ru/lectors/kozel">Козел В.М.[ЛК]</a></li>
+			<li>Казубович Т.М.[ЛР, ПЗ] (Казубович Татьяна Михайловна (Магистрант))</li>
 		</ol>
 	</li>
-
-	<li><a href="http://bsuir-helper.ru/predmet/spvutsrs">СПвУЦРС</a>
+	<li><a href="#">ЦТиР (Цифровое телевидение и радио)[ЛК, ЛР]</a>
 		<ol>
-			<li><a href="http://bsuir-helper.ru/lectors/kazeka">Казека Александр Анатольевич</a>
+			<li><a href="http://bsuir-helper.ru/lectors/khominich">Хоминич Александр Леонидович</a></li>
 		</ol>
 	</li>
-
+	<li>
+		<a href="#">ОТ (Охрана Труда)[ЛК, ЛР]</a>
+		<ol>
+			<li>Амелин М.А.[ЛР] – магистрант кафедры экономики</li>
+			<li><a href="http://bsuir-helper.ru/lectors/osipovich">Осипович Виталий Семёнович[ЛК]</a></li>
+		</ol>
+	</li>
+	<li>
+		<a href="#">ОПиУП (Организация производства и управление предприятием)[ЛК, ПЗ]</a>
+		<ol>
+			<li><a href="http://bsuir-helper.ru/lectors/ermakova">Ермакова Екатерина Витальевна[ЛК]</a></li>
+			<li><a href="http://bsuir-helper.ru/lectors/feshchenko">Фещенко Светлана Леонидовна[ПЗ]</a></li>
+		</ol>
+	</li>
 </ul>
 ';
 
