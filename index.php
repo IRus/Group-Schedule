@@ -17,6 +17,9 @@
         <div class="page-header">
           <h2>Текущая неделя: <span class="currentWeek"></span> <small>Показана неделя: <span class="shownWeek"></span></small></h2>
         </div>
+        <div>
+          <?php echo $temp_info; ?>
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-10">

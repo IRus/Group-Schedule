@@ -23,12 +23,6 @@ $monday = '
 				<p class="name">СПИсРСС</p>
 				<p class="description">лк	337-1	Чердынцев В.А.</p>
 			</div>
-
-			<div class="laba total p7 n2">
-				<p class="time">18:45-20:20</p>
-				<p class="name">ОТ</p>
-				<p class="description">лр	601-2	Амелин М.А.</p>
-			</div>
 ';
 
 $tuesday = '
@@ -72,6 +66,12 @@ $tuesday = '
 				<p class="time">18:45-20:20</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лр	347-1	Горбачев К.Л.</p>
+			</div>
+
+			<div class="laba total p7 n2">
+				<p class="time">18:45-20:20</p>
+				<p class="name">ОТ</p>
+				<p class="description">лр	601-2	Амелин М.А.</p>
 			</div>
 ';
 
@@ -190,16 +190,20 @@ $info = '
 		<ol>
 			<li>Амелин М.А.[ЛР] – магистрант кафедры экономики</li>
 			<li><a href="http://bsuir-helper.ru/lectors/osipovich">Осипович Виталий Семёнович[ЛК]</a></li>
+			<li>Елена Александровна</li>
 		</ol>
 	</li>
 	<li>
-		<a href="#">ОПиУП (Организация производства и управление предприятием)[ЛК, ПЗ]</a>
+		<a href="#">ОПиУП (Организация производства и управление предприятием)[ЛК, ПЗ][ЭКЗАМЕН]</a>
 		<ol>
 			<li><a href="http://bsuir-helper.ru/lectors/ermakova">Ермакова Екатерина Витальевна[ЛК]</a></li>
 			<li><a href="http://bsuir-helper.ru/lectors/feshchenko">Фещенко Светлана Леонидовна[ПЗ]</a></li>
 		</ol>
 	</li>
 </ul>
+';
+$temp_info = '
+	<h4>Перенос на 6 сентября с 17 сентября ПЗ по ОПиУП. 6.09.13 в 15-20 к.222-5</h4>
 ';
 
 ?>
