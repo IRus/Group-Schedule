@@ -105,7 +105,7 @@
 
             <?php
                 $weekNumber = date("W");
-                $currentWeek = ($weekNumber - 3 - 1) % 4 + 1;
+                $currentWeek = ($weekNumber - 2 - 1) % 4 + 1;
                 //                            N
                 // N - Магическое число: 2 - разница между учебной и календарной неделей
                 // текущая неделя - 2 учебная
