@@ -142,6 +142,6 @@
             });
         })();
     </script>
-    <script src="favicon.js"></script>
+    <script src="js/favicon.js"></script>
   </body>
 </html>
