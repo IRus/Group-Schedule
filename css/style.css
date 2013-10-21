@@ -108,6 +108,10 @@
 	display: none !important;
 }
 
+.not-important {
+	transparency: 50%;
+}
+
 article {
 	margin-top: 60px;
 }
