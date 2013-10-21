@@ -12,13 +12,13 @@
 // lection laba total practick voenka
 
 $monday = '
-			<div class="lection p5">
+			<div class="not-important lection p5">
 				<p class="time">15:20-16:55</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лк	347-1	Горбачев К.Л.</p>
 			</div>
 
-			<div class="lection p6">
+			<div class="not-important lection p6">
 				<p class="time">17:05-18:40</p>
 				<p class="name">СПИсРСС</p>
 				<p class="description">лк	337-1	Чердынцев В.А.</p>
@@ -32,13 +32,13 @@ $tuesday = '
 				<p class="description">пз	222-5	Фещенко С.Л.</p>
 			</div>
 
-			<div class="lection p5">
+			<div class="not-important lection p5">
 				<p class="time">15:20-16:55</p>
 				<p class="name">СиС ЦРС</p>
 				<p class="description">лк	402-1	Козел В.М.</p>
 			</div>
 
-			<div class="laba p6 n1 n3 gr1">
+			<div class="not-important laba p6 n1 n3 gr1">
 				<p class="time">17:05-18:40</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лр	347-1	Горбачев К.Л.</p>
@@ -56,13 +56,13 @@ $tuesday = '
 				<p class="description">лр	518-3	Хоминич А.Л.</p>
 			</div>
 
-			<div class="laba p6 n2 n4 gr2">
+			<div class="not-important laba p6 n2 n4 gr2">
 				<p class="time">17:05-18:40</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лр	347-1	Горбачев К.Л.</p>
 			</div>
 
-			<div class="laba total p7 n1 n3">
+			<div class="not-important laba total p7 n1 n3">
 				<p class="time">18:45-20:20</p>
 				<p class="name">МЦРиЭМС РЭС</p>
 				<p class="description">лр	347-1	Горбачев К.Л.</p>
@@ -88,7 +88,7 @@ $wednesday = '
 				<p class="description">лк	211-3	Осипович В.С.</p>
 			</div>
 
-			<div class="lection p6 n1 n3">
+			<div class="not-important lection p6 n1 n3">
 				<p class="time">17:05-18:40</p>
 				<p class="name">СиС ЦРС</p>
 				<p class="description">лк	402-1	Козел В.М.</p>
