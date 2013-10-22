@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+  <head>
+    <title>Be Organized</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Schedule"/>
+    <meta name="author" content="Ruslan Ibragimov"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"/>
+    <link href="css/style.css" rel="stylesheet" media="screen"/>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class="row">
+        <div class="page-header">
+          <h2>Текущая неделя: <span class="currentWeek"></span> <small>Показана неделя: <span class="shownWeek"></span></small></h2>
+        </div>
+        <div class="warnings">
+          <p><!-- warnings --></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10">
+          <div id="groups" class="btn-group btn-group-justified">
+            <a type="button" data-group="1" href="#" class="btn btn-default btn-lg">Группа 1</a>
+            <a type="button" data-group="2" href="#" class="btn btn-default btn-lg">Группа 2</a>
+            <a type="button" data-toggle="modal" href="#prepod-info" class="btn btn-default btn-lg">Info</a>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div id="weeks" class="btn-group">
+            <button type="button" class="btn btn-primary btn-lg" data-week="1">1</button>
+            <button type="button" class="btn btn-success btn-lg" data-week="2">2</button>
+            <button type="button" class="btn btn-info btn-lg" data-week="3">3</button>
+            <button type="button" class="btn btn-warning btn-lg" data-week="4">4</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="schedule">
+
+      </div>
+
+    </div>
+
+    <div class="modal fade" id="prepod-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Информация о преподавателях</h4>
+          </div>
+          <div class="modal-body">
+            <p><!-- additional info --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="data/schedule.js"></script>
+    <script src="data/info.js"></script>
+    <script src="data/warnings.js"></script>
+     <script src="http://static.streetball.name/jquery/jquery-latest.min.js"></script>
+    <script src="js/favicon.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
