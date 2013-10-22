@@ -1,0 +1,1 @@
+warnings = 'Please, reports me bugs!';
