@@ -95,9 +95,9 @@ $(function() {
     };
 
     Schedule.prototype.getCurrentWeek = function() {
-        var today = new Date();
-        this.currentWeek = (today.getWeek(1) - 2 - 1) % 4 + 1;
-        return this.currentWeek;
+        var today = new Date()
+           ,week = "";
+        return week = (today.getWeek(1) - 2 - 1) % 4 + 1;;
         /**
          * this.currentWeek = (today.getWeek(1) - N - 1) % 4 + 1;
          * N - Магическое число: 2 - разница между учебной и календарной неделей
@@ -166,11 +166,25 @@ $(function() {
         this.number = "";
     }
 
+    Day.prototype.getDate = function() {
+        var date = new Date()
+           ,day = date.getDate()
+           ,month = date.getMonth() + 1
+           ,year = date.getFullYear()
+           ,weekDay = date.getDay();
+        day += this.number - weekDay + 1;
+        day += 7 * (schedule.weekToShow - schedule.currentWeek);
+        // TODO: check for overflow date
+        return year.toString() + ("0" + month).slice(-2) + ("0" + day).slice(-2);
+
+    };
+
     Day.prototype.fill = function(day) {
         this.number = day.number;
         for (var iterLesson in day.lessons) {
             var lesson = new Lesson();
             lesson.fill(day.lessons[iterLesson]);
+            lesson.date = this.getDate();
             if (lesson.hasWeek(schedule.weekToShow) && lesson.hasGroup(schedule.currentGroup)) {
                 this.lessons[lesson.time] = lesson;
             }
@@ -215,6 +229,7 @@ $(function() {
 
     function Lesson() {
         this.time = "";
+        this.date = "";
         this.name = "";
         this.type = "";
         this.info = "";
@@ -248,7 +263,7 @@ $(function() {
 
     Lesson.prototype.getHtml = function() {
         return '<div class="' + this.type + ' ' + 'p' + this.time + '">'
-            + '<p class="time">' + this.getTimeFromNumber(this.time) + '</p>'
+            + '<p class="time">' + this.getLink() + '</p>'
             + '<p class="name">' + this.name + '</p>'
             + '<p class="description">' + this.info + '</p>'
             + '</div>';
@@ -259,27 +274,71 @@ $(function() {
      * @param number number of lesson.
      * @returns {string} time in 24h format.
      */
-    Lesson.prototype.getTimeFromNumber = function(number) {
+    Lesson.prototype.getStartTimeFromNumber = function(number) {
         switch (number) {
             case 1:
-                return "8:00-9:35";
+                return "8:00";
             case 2:
-                return "9:45-11:20";
+                return "9:45";
             case 3:
-                return "11:40-13:15";
+                return "11:40";
             case 4:
-                return "13:25-15:00";
+                return "13:25";
             case 5:
-                return "15:20-16:55";
+                return "15:20";
             case 6:
-                return "17:05-18:40";
+                return "17:05";
             case 7:
-                return "18:45-20:20";
+                return "18:45";
             case 8:
-                return "20:25-22:00";
+                return "20:25";
             default:
                 return "";
         }
+    };
+
+    /**
+     * Converts number to it's time equivalent for BSUIR schedule.
+     * @param number number of lesson.
+     * @returns {string} time in 24h format.
+     */
+    Lesson.prototype.getEndTimeFromNumber = function(number) {
+        switch (number) {
+            case 1:
+                return "9:35";
+            case 2:
+                return "11:20";
+            case 3:
+                return "13:15";
+            case 4:
+                return "15:00";
+            case 5:
+                return "16:55";
+            case 6:
+                return "18:40";
+            case 7:
+                return "20:20";
+            case 8:
+                return "22:00";
+            default:
+                return "";
+        }
+    };
+
+    Lesson.prototype.getLink = function() {
+        return '<a href="http://www.google.com/calendar/event?action=TEMPLATE'
+            + '&text=' + this.name
+            + '&dates='
+            + this.date + 'T' + (this.getStartTimeFromNumber(this.time).replace(':', '') - 300) + '00' + 'Z'
+            + '/'
+            + this.date + 'T' + (this.getEndTimeFromNumber(this.time).replace(':', '') - 300) + '00' + 'Z'
+            + '&details=' + this.info
+            + '&location=' + this.info
+            + '">'
+            + this.getStartTimeFromNumber(this.time)
+            + '-'
+            + this.getEndTimeFromNumber(this.time)
+            + '</a>';
     };
 
     Lesson.prototype.hasWeek = function(weekNumber) {
