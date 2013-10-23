@@ -70,13 +70,13 @@ $(function() {
             }
         }
         return 1;
-    }
+    };
 
     Schedule.prototype.saveCurrentGroup = function(value) {
         if (isLocalStorage()) {
             localStorage.setItem('currentGroup', value);
         }
-    }
+    };
 
     Schedule.prototype.show = function() {
         this.fill();
@@ -97,7 +97,7 @@ $(function() {
     Schedule.prototype.getCurrentWeek = function() {
         var today = new Date()
            ,week = "";
-        return week = (today.getWeek(1) - 2 - 1) % 4 + 1;;
+        return week = (today.getWeek(1) - 2 - 1) % 4 + 1;
         /**
          * this.currentWeek = (today.getWeek(1) - N - 1) % 4 + 1;
          * N - Магическое число: 2 - разница между учебной и календарной неделей
@@ -153,12 +153,17 @@ $(function() {
     };
 
     Week.prototype.getHtml = function() {
-        var result = "";
+        var fullResult = ""
+           ,result = "";
         for (var iterDay = 0; iterDay < this.days.length; iterDay++) {
             result += this.days[iterDay].getHtml();
+            if ((iterDay + 1) % 3 == 0 || (iterDay == this.days.length - 1)) {
+                fullResult += '<div class="row">' + result  + '</div>';
+                result = "";
+            }
         }
-        return result;
-    }
+        return fullResult;
+    };
 
 
     function Day() {
