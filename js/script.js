@@ -41,6 +41,19 @@ $(function() {
     };
 
     /**
+     * Day 0 is the last day in the previous month.
+     * Because the month constructor is 0 based, this works nicely.
+     * A bit of a hack, but that's basically what your doing by subtracting 32.
+     * http://stackoverflow.com/questions/315760/what-is-the-best-way-to-determine-the-number-of-days-in-a-month-with-javascript
+     * @param month number from 1 to 12
+     * @param year
+     * @returns number number of days in specific month and year
+     */
+    function daysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+
+    /**
      * http://diveintohtml5.info/storage.html
      * @returns boolean if true - browser support local storage.
      */
@@ -179,7 +192,11 @@ $(function() {
            ,weekDay = date.getDay();
         day += this.number - weekDay + 1;
         day += 7 * (schedule.weekToShow - schedule.currentWeek);
-        // TODO: check for overflow date
+        // Check for overflow date
+        if (day > daysInMonth(month, year)) {
+            day -= daysInMonth(month, year);
+            month += 1;
+        }
         return year.toString() + ("0" + month).slice(-2) + ("0" + day).slice(-2);
 
     };
