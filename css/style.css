@@ -110,6 +110,7 @@
 
 .not-important {
     opacity: 0.4;
+    background-color: #ccc;
 }
 
 article {
