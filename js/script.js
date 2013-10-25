@@ -120,7 +120,7 @@ $(function() {
     };
 
     Schedule.prototype.getWeekToShow = function() {
-        this.weekToShow = new Date().getDay() > 4 ? this.currentWeek % 4 + 1 : this.currentWeek;
+        this.weekToShow = new Date().getDay() > 5 ? this.currentWeek % 4 + 1 : this.currentWeek;
         return this.weekToShow;
     };
 
@@ -340,6 +340,11 @@ $(function() {
         return hours + ":" + ("0" + minutes).slice(-2);
     };
 
+    /**
+     * More about this link here:
+     * https://support.google.com/calendar/answer/3033039
+     * @returns string
+     */
     Lesson.prototype.getLink = function() {
         return '<a href="http://www.google.com/calendar/event?action=TEMPLATE'
             + '&text=' + this.name
