@@ -275,6 +275,7 @@ $(function() {
 
     Lesson.prototype.fill = function(lesson) {
         this.time = lesson.time;
+        this.lessonDuration = "01:35";
         this.name = lesson.name;
         this.type = lesson.type;
         this.info = lesson.info;
@@ -325,26 +326,18 @@ $(function() {
      * @returns {string} time in 24h format.
      */
     Lesson.prototype.getEndTimeFromNumber = function(number) {
-        switch (number) {
-            case 1:
-                return "9:35";
-            case 2:
-                return "11:20";
-            case 3:
-                return "13:15";
-            case 4:
-                return "15:00";
-            case 5:
-                return "16:55";
-            case 6:
-                return "18:40";
-            case 7:
-                return "20:20";
-            case 8:
-                return "22:00";
-            default:
-                return "";
+        var startTime = this.getStartTimeFromNumber(number)
+           ,minutes = 0
+           ,hours = 0;
+        startTime = ("0" + startTime).slice(-5);
+        hours = parseInt(startTime.substring(0, 2)) + parseInt(this.lessonDuration.substring(0, 2));
+        hours = hours > 23 ? hours - 24 : hours;
+        minutes = parseInt(startTime.substring(3)) + parseInt(this.lessonDuration.substring(3));
+        if (minutes >= 60) {
+            minutes -= 60;
+            hours += 1;
         }
+        return hours + ":" + ("0" + minutes).slice(-2);
     };
 
     Lesson.prototype.getLink = function() {
@@ -420,5 +413,6 @@ $(function() {
         schedule.show();
     });
 
+    $("#start-togetherjs").click(TogetherJS);
 
 });
