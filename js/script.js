@@ -1,7 +1,10 @@
 $(function() {
 
     // Set additional info
-    $(".modal-body p").append(info);
+    $("#prepod-info p").append(info);
+
+    // Set exams info
+    $("#exams p").append(exams);
 
     // Set warnings
     $(".warnings p").append(warnings);
