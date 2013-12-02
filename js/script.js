@@ -4,7 +4,7 @@ $(function() {
     $("#prepod-info p").append(info);
 
     // Set exams info
-    $("#exams p").append(exams);
+    $("#exams .exams").append(exams);
 
     // Set warnings
     $(".warnings p").append(warnings);
