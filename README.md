@@ -12,6 +12,6 @@ Used in schedule:
  * Ugly JS (written by me)
  * [Google Calendar integration](https://support.google.com/calendar/answer/3033039#)
 
-Working example you can see on my website: [http://ibragimov.by/a/](http://ibragimov.by/a/).
+Working example you can see on my website: [http://ibragimov.by/s/](http://ibragimov.by/s/).
 
 Feel free to improve this sh*t!
