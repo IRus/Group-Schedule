@@ -1,6 +1,8 @@
 Group Schedule
 ==============
 
+![How site looks.](./demo.png)
+
 This is a simple schedule for study group of [BSUIR](http://bsuir.by/).
 
 Used in schedule:
